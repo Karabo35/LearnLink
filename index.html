@@ -1,1 +1,90 @@
-https://github.com/Karabo35/LearnLink
+
+Okay! Here's what you need to do to FIX it:
+
+*Your file currently says:* `http://github.com/karabo35/LearnLink`
+*It should say:* Full app code
+
+### FIX IT NOW - 30 seconds:
+
+1. In GitHub, open your `index.html` file again
+2. Click the pencil icon ✏️ *Edit* (top right)
+3. *DELETE* everything inside (delete that link you pasted)
+4. *COPY-PASTE THIS FULL CODE* below:
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LearnLink - Study Buddy Finder</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial}
+body{background:#f5f7ff;min-height:100vh}
+.header{background:#4f46e5;color:white;padding:20px;text-align:center}
+.header h1{font-size:32px}
+.container{max-width:900px;margin:20px auto;padding:20px}
+.card{background:white;border-radius:12px;padding:20px;margin:15px 0;box-shadow:0 4px 12px rgba(0,0,0,0.1)}
+.btn{background:#4f46e5;color:white;border:none;padding:12px 24px;border-radius:8px;cursor:pointer;font-size:16px;width:100%;margin-top:10px}
+.btn:hover{background:#4338ca}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:15px}
+@media(max-width:600px){.grid{grid-template-columns:1fr}}
+.badge{background:#e0e7ff;color:#4f46e5;padding:4px 10px;border-radius:20px;font-size:12px;display:inline-block;margin:2px}
+input,select,textarea{width:100%;padding:12px;border:1px solid #ddd;border-radius:8px;margin:6px 0}
+h2{color:#4f46e5;margin-bottom:10px}
+</style>
+</head>
+<body>
+<div class="header">
+<h1>🔗 LearnLink</h1>
+<p>Find Your Perfect Study Buddy - ASA23 Shark Tank Project</p>
+</div>
+<div class="container">
+<div class="card">
+<h2>🚀 Welcome to LearnLink!</h2>
+<p>Connect with students taking the same courses, form study groups, and ace your exams together!</p>
+</div>
+<div class="grid">
+<div class="card">
+<h2>📚 Find Study Partners</h2>
+<input type="text" id="subject" placeholder="Enter subject e.g. Mathematics">
+<select id="level"><option>Select Level</option><option>Beginner</option><option>Intermediate</option><option>Advanced</option></select>
+<button class="btn" onclick="findBuddy()">Find Buddy</button>
+<div id="results"></div>
+</div>
+<div class="card">
+<h2>👥 Active Study Groups</h2>
+<div><strong>Math Masters</strong> <span class="badge">Mathematics</span><br>12 members • Meeting Today 4PM</div><br>
+<div><strong>Code Crew</strong> <span class="badge">Programming</span><br>8 members • Tomorrow 2PM</div><br>
+<div><strong>Science Squad</strong> <span class="badge">Physics</span><br>15 members • Daily 6PM</div>
+<button class="btn">Join Group</button>
+</div>
+</div>
+<div class="card">
+<h2>✨ Why LearnLink?</h2>
+<p>✅ Match with students based on subjects & availability<br>
+✅ Built-in chat & video study sessions<br>
+✅ Track progress & share notes<br>
+✅ Created for students, by students - ASA23</p>
+</div>
+</div>
+<script>
+function findBuddy(){
+let subj=document.getElementById('subject').value;
+let r=document.getElementById('results');
+if(!subj){r.innerHTML='<p style="color:red">Enter subject!</p>';return}
+r.innerHTML='<p>🎉 Found 3 buddies for '+subj+'!</p><div style="margin-top:10px"><div>• Thabo - Available Now <button style="background:#10b981;color:white;border:none;padding:5px 10px;border-radius:5px">Connect</button></div><div>• Lerato - Tomorrow <button style="background:#10b981;color:white;border:none;padding:5px 10px;border-radius:5px">Connect</button></div></div>';
+}
+</script>
+</body>
+</html>
+5. Scroll down and click green *Commit changes*
+
+*AFTER THAT:*
+- Go to Settings > Pages > Branch: main > Save
+- Wait 2 mins
+- Open: `https://karabo35.github.io/LearnLink/` -> It will show your APP!
+
+*Copy the code above from `<!DOCTYPE` to `</html>` - ALL OF IT!*
+
+On computer, select all, Ctrl+C, go to GitHub file, Ctrl+V
+
+Tell me when done - I'll check if live link works!
